@@ -24,7 +24,7 @@ script:
 deploy:
   provider: pages
   skip_cleanup: true
-  github_token: "c13c593d0af940a07ba3c409c4c70c71d1602a7f"
+  github_token: $GITHUB_TOKEN
   local_dir: dist/shubhamCV/browser/
   on:
     branch: master
