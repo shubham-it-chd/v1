@@ -19,7 +19,5 @@ before_script:
   - yarn global add @angular/cli
 
 script:
-  - ng lint
-  - npm run test-headless
   - ng build --prod --base-href https://github.com/shubham-it-chd/v1/
 
