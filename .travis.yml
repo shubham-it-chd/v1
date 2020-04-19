@@ -19,7 +19,7 @@ before_script:
   - yarn global add @angular/cli@9.1.0
 
 script:
-  - build:prerender #--base-href https://github.com/shubham-it-chd/v1/
+  - npm run build:prerender #--base-href https://github.com/shubham-it-chd/v1/
 
 deploy:
   provider: pages
