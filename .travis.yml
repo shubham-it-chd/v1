@@ -28,3 +28,4 @@ deploy:
   local_dir: dist/shubhamCV/browser/
   on:
     branch: master
+  repo: shubham-it-chd/shubham-it-chd.github.io
