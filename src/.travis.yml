@@ -1,0 +1,19 @@
+language: node_js
+node_js:
+  - "12"
+dist: trusty
+sudo: required
+
+branches:
+  only:
+  - master
+
+before_script:
+  - npm install -g @angular/cli
+  - npm install -g yarn
+
+script:
+  - ng lint
+  - npm run test-headless
+  - ng build --prod --base-href https://github.com/shubham-it-chd/v1/
+
