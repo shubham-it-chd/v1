@@ -19,12 +19,12 @@ before_script:
   - yarn global add @angular/cli@9.1.0
 
 script:
-  - npm run build:prerender #--base-href https://github.com/shubham-it-chd/v1/
+  - build:prerender #--base-href https://github.com/shubham-it-chd/v1/
 
 deploy:
   provider: pages
   skip_cleanup: true
-  github_token: $GITHUB_TOKEN
+  github_token: "c13c593d0af940a07ba3c409c4c70c71d1602a7f"
   local_dir: dist/shubhamCV/browser/
   on:
     branch: master
